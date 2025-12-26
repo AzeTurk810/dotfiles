@@ -1,0 +1,62 @@
+configuration {
+  show-icons: true;
+  icon-theme: "Papirus";
+  font: "JetBrainsMono Nerd Font 11";
+}
+
+* {
+  bg: rgba(20,20,25,0.65);
+  bg-alt: rgba(30,30,40,0.75);
+  fg: #e6e6e6;
+  accent: #89b4fa;
+}
+
+window {
+  transparency: "real";
+  background-color: @bg;
+  border-radius: 18px;
+  width: 70%;
+}
+
+mainbox {
+  padding: 20px;
+  background-color: transparent;
+}
+
+listview {
+  columns: 4;
+  lines: 5;
+  spacing: 14px;
+  background-color: transparent;
+}
+
+element {
+  background-color: @bg-alt;
+  border-radius: 14px;
+  padding: 8px;
+}
+
+element selected {
+  background-color: @accent;
+  text-color: #000000;
+}
+
+element-icon {
+  size: 100px;
+  border-radius: 10px;
+}
+
+element-text {
+  horizontal-align: 0.5;
+  vertical-align: 0.5;
+}
+
+inputbar {
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+prompt {
+  enabled: false;
+}
+

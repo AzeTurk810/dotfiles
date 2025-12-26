@@ -1,0 +1,92 @@
+/* wallpaper-beauty.rasi
+   Place to ~/.config/rofi/wallpaper-beauty.rasi
+*/
+
+configuration {
+  show-icons: true;
+  icon-theme: "Papirus";
+  font: "JetBrainsMono Nerd Font 12";
+  kb-row-down: "Down";
+  kb-row-up: "Up";
+}
+
+* {
+  bg: rgba(16,18,23,0.60);
+  bg-alt: rgba(20,22,28,0.55);
+  fg: #e6eef6;
+  accent: #7dd3fc;
+}
+
+/* window */
+window {
+  background-color: @bg;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.03);
+  width: 82%;
+  padding: 18px;
+  location: center;
+}
+
+/* mainbox: keep transparent, allow nice spacing */
+mainbox {
+  margin: 6px;
+  background-color: transparent;
+}
+
+/* list view as grid */
+listview {
+  columns: 5;      /* nice grid */
+  lines: 4;        /* 5*4 = 20 visible at once (we page 100) */
+  spacing: 14px;
+  padding: 8px;
+  background-color: transparent;
+}
+
+/* every element card */
+element {
+  background-color: rgba(255,255,255,0.03);
+  border-radius: 12px;
+  padding: 6px;
+  min-width: 160px;
+  min-height: 140px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.55);
+}
+
+/* selected style */
+element:selected {
+  background-color: rgba(125,211,252,0.14);
+  border: 1px solid rgba(125,211,252,0.22);
+}
+
+/* icon size */
+element-icon {
+  size: 160px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+/* overlayed filename */
+element-text {
+  horizontal-align: 0.5;
+  vertical-align: 0.5;
+  text-color: @fg;
+  font: "JetBrainsMono Nerd Font 10";
+  padding: 4px 6px;
+}
+
+/* simple inputbar (filter) */
+inputbar {
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+/* mesg at top (page) */
+mesg {
+  text-color: rgba(230,238,246,0.85);
+  padding: 6px;
+  font: "JetBrainsMono Nerd Font 11";
+}
+
+/* remove prompt */
+prompt { enabled: false; }
+
