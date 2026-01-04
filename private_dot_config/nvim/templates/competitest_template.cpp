@@ -22,9 +22,10 @@ using namespace std;
 #define INFll 1e18
 
 #ifdef ONPC
-    #include<algo.hpp>
+#include<algo.hpp>
 #else
-    #define dbg(...)
+#define dbg(...)
+#define dbg_out(...)
 #endif
 
 void solve() {

@@ -8,7 +8,7 @@ return {
                 null.builtins.formatting.stylua,
                 null.builtins.formatting.clang_format.with({
                     extra_args = {
-                        "--style={BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4, UseTab: Never, ColumnLimit: 0}",         -- INFO: c++ ucun 4 tab
+                        "--style={BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4, UseTab: Never, ColumnLimit: 0}", -- INFO: c++ ucun 4 tab
                     },
                 }),
             },
