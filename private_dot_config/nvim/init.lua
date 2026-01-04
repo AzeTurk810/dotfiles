@@ -1,5 +1,7 @@
 -- Set leader key before any mappings
 vim.g.mapleader = ' '
+vim.opt.signcolumn = "yes"
+
 
 -- cava
 --
