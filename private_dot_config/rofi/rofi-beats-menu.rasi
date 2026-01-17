@@ -1,0 +1,61 @@
+configuration {
+    show-icons: false;
+    font: "JetBrainsMono Nerd Font 12";
+}
+
+* {
+    bg:     #0b0d12f2;
+    fg:     #cdd6f4;
+    accent: #89b4fa;
+    green:  #a6e3a1;
+}
+
+window {
+    location: center;
+    anchor: center;
+    width: 30%;
+    border-radius: 14px;
+    padding: 14px;
+    background-color: @bg;
+}
+
+mainbox {
+    spacing: 10px;
+    children: [ inputbar, listview ];
+}
+
+inputbar {
+    spacing: 8px;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    enabled: true;
+    text: "󰎆 RofiBeats";
+    text-color: @accent;
+}
+
+entry {
+    placeholder: "Choose player or source…";
+    text-color: @fg;
+}
+
+listview {
+    lines: 6;
+    scrollbar: false;
+}
+
+element {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+element selected {
+    background-color: @accent;
+    text-color: #11111b;
+}
+
+element-text {
+    text-color: @fg;
+}
+

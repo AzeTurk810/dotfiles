@@ -28,13 +28,13 @@ entry {
 }
 
 /* ---- Listview ---- */
-listview {
-  columns: 2;
-  lines: 5;
-  spacing: 4px;
-  scrollbar: false;
-  border-radius: 12px;
-}
+// listview {
+//   columns: 2;
+//   lines: 5;
+//   spacing: 4px;
+//   scrollbar: false;
+//   border-radius: 12px;
+// }
 
 /* ---- Element ---- */
 element {

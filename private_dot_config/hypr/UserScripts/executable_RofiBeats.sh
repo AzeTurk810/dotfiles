@@ -4,11 +4,21 @@
 # Variables
 mDIR="$HOME/Music/"
 iDIR="$HOME/.config/swaync/icons"
-rofi_theme="$HOME/.config/rofi/config-rofi-Beats.rasi"
-rofi_theme_1="$HOME/.config/rofi/config-rofi-Beats-menu.rasi"
+rofi_theme="/home/azeturk810/.config/rofi/config.rasi"
+rofi_theme1="/home/azeturk810/.config/rofi/config.rasi"
+# rofi_theme_1="~/.config/rofi/rofi-transparent.rasi"
+# rofi_theme="/home/azeturk810/.config/rofi/rofi_themes/appmnu.rasi"
+# rofi_theme_1="~/.config/rofi/rofi-transparent.rasi"
+
+# rofi_theme="$HOME/.config/rofi/config-rofi-Beats.rasi"
+# rofi_theme_1="$HOME/.config/rofi/config-rofi-Beats-menu.rasi"
 
 # Online Stations. Edit as required
 declare -A online_music=(
+    ["SmoothChill ☕️🎶"]="https://media-ssl.musicradio.com/SmoothChill"
+    ["The Bootleg Boy ☕️🎶"]="http://stream.zeno.fm/0r0xa792kwzuv"
+    ["Box Lofi ☕️🎶"]="http://stream.zeno.fm/f3wvbbqmdg8uv"
+    ["FM - Lofi Girl"]="https://play.streamafrica.net/lofiradio"
   ["YT - Lofi Girl"]="https://youtu.be/HwL9ZNz0Sus"
   ["FM - Easy Rock 96.3 "]="https://radio-stations-philippines.com/easy-rock"
   ["FM - Easy Rock - Baguio 91.9 "]="https://radio-stations-philippines.com/easy-rock-baguio"
@@ -53,7 +63,7 @@ play_local_music() {
   populate_local_music
 
   # Prompt the user to select a song
-  choice=$(printf "%s\n" "${filenames[@]}" | rofi -i -dmenu -config $rofi_theme)
+  choice=$(printf "%s\n" "${filenames[@]}" | rofi -i -dmenu -theme $rofi_theme -icon-theme $rofi_theme1)
 
   if [ -z "$choice" ]; then
     exit 1
@@ -89,7 +99,7 @@ shuffle_local_music() {
 play_online_music() {
   choice=$(for online in "${!online_music[@]}"; do
     echo "$online"
-  done | sort | rofi -i -dmenu -config "$rofi_theme")
+  done | sort | rofi -i -dmenu -theme "$rofi_theme" -icon-theme "$rofi_theme1")
 
   if [ -z "$choice" ]; then
     exit 1
@@ -132,8 +142,9 @@ user_choice=$(printf "%s\n" \
   "Play from Online Stations" \
   "Play from Music directory" \
   "Shuffle Play from Music directory" \
+  "Cmus player" \
   "Stop RofiBeats" |
-  rofi -dmenu -config $rofi_theme_1)
+  rofi -dmenu -theme $rofi_theme -icon-theme $rofi_theme_1)
 
 echo "User choice: $user_choice"
 
@@ -141,6 +152,11 @@ case "$user_choice" in
 "Play from Online Stations")
   play_online_music
   ;;
+"Cmus player")
+    notification "Opening Cmus"
+    kitty -e cmus
+    ;;
+
 "Play from Music directory")
   play_local_music
   ;;

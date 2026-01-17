@@ -1,6 +1,5 @@
 -- Set leader key before any mappings
 vim.g.mapleader = ' '
-vim.opt.signcolumn = "yes"
 
 
 -- cava
@@ -142,4 +141,5 @@ require('lazy').setup({
   spec = { { import = 'plugins' } },
   ui = { border = 'rounded' },
 })
+vim.opt.signcolumn = "yes"
 

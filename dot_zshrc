@@ -173,4 +173,19 @@ export VISUAL=nvim
 # fi
 # unset __conda_setup
 # <<< conda initialize <<<
-
+function focus() {
+    case "$1" in
+        on)     sudo f-on ;;
+        off)    sudo f-off "$2" ;;
+        add)    sudo f-add "$2" ;;
+        del)    sudo f-del "$2" ;;
+        list)   sudo f-list ;;
+        get)    f-get "$2" ;;
+        clean) sudo f-clean ;;
+        watch)  sudo f-watch ;;
+        timer)  sudo f-timer "$2" ;;
+        status) sudo f-status ;;
+        help)   f-help ;;
+        *)      f-help ;;
+    esac
+}

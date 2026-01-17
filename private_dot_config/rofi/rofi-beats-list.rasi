@@ -1,0 +1,76 @@
+configuration {
+    show-icons: false;
+    font: "JetBrainsMono Nerd Font 11";
+}
+
+* {
+    bg:     #0b0d12f2;
+    fg:     #b5b7c2;
+    dim:    #6f7383;
+    accent: #88c0d0;
+}
+
+window {
+    location: center;
+    anchor: center;
+    width: 48%;
+    height: 60%;
+    padding: 16px;
+    border-radius: 18px;
+    background-color: @bg;
+}
+
+mainbox {
+    spacing: 12px;
+    children: [ inputbar, listview ];
+}
+
+inputbar {
+    children: [ prompt, entry ];
+}
+
+prompt {
+    enabled: true;
+    text: "Select track";
+    text-color: @dim;
+}
+
+entry {
+    placeholder: "Type to search…";
+    text-color: @fg;
+}
+
+listview {
+    lines: 14;
+    dynamic: true;
+    scrollbar: true;
+    background-color: transparent;
+}
+
+/* 🔴 FIX */
+element {
+    padding: 9px;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+element normal {
+    background-color: transparent;
+    text-color: @fg;
+}
+
+element alternate {
+    background-color: transparent;
+    text-color: @fg;
+}
+
+element active {
+    background-color: transparent;
+    text-color: @fg;
+}
+
+element selected {
+    background-color: @accent;
+    text-color: #0b0d12;
+}
+

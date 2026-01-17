@@ -17,7 +17,7 @@ return {
           HACK = { icon = " ", color = "warning" , alt = {"Duetime"} },
           WARN = { icon = " ", color = "warning", alt = { "WARNING"} },
           PERF = { icon = " ", alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE" } },
-          NOTE = { icon = " ", color = "hint", alt = { "INFO" } },
+          NOTE = { icon = " ", color = "hint", alt = { "INFO","Example" } },
           TEST = { icon = "⏲ ", color = "test", alt = { "TESTING", "PASSED", "FAILED" } },
       },
       gui_style = {
