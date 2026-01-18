@@ -12,7 +12,7 @@ My mission is changed.
 */
 #include <iostream>
 
-//mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+// mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 
 using ll = long long;
 using namespace std;
@@ -22,7 +22,7 @@ using namespace std;
 #define INFll 1e18
 
 #ifdef ONPC
-#include<algo.hpp>
+#include <algo.hpp>
 #else
 #define dbg(...)
 #define dbg_out(...)
@@ -39,7 +39,7 @@ signed main() {
     cin.tie(nullptr);
     int t = 1;
     // cin >> t;
-    for(int cases = 0 ; cases < t;cases ++) {
+    for (int cases = 0; cases < t; cases++) {
         solve();
     }
 }
@@ -48,7 +48,7 @@ signed main() {
 
  * I USE ARCH + HYPRLAND + NVIM btw :)
 
- * Kuslar qisa , heyat ucur 
+ * Kuslar qisa , heyat ucur
  */
 /*
    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⠀⠀⠀⢀⣴⣾⠀⠀⠀⡀⢀⠀⠀⠀⠀

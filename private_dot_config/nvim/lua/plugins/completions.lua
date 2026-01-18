@@ -1,5 +1,6 @@
 return {
 	"hrsh7th/nvim-cmp",
+	-- enabled = false,
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-path",
@@ -869,6 +870,9 @@ return {
 
 		local cmp = require("cmp")
 		cmp.setup({
+			performance = {
+				max_view_entries = 7,
+			},
 			window = {
 				completion = cmp.config.window.bordered({
 					border = "rounded",

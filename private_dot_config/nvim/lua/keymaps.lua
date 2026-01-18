@@ -25,7 +25,7 @@ vim.keymap.set('n', '<C-j>', ':TmuxNavigateDown<CR>', { silent = true })
 vim.keymap.set('n', '<C-k>', ':TmuxNavigateUp<CR>', { silent = true })
 vim.keymap.set('n', '<C-l>', ':TmuxNavigateRight<CR>', { silent = true })
 
-vim.keymap.set('n', '<C-e>', ':Neotree toggle<CR>', { silent = true })
+-- vim.keymap.set('n', '<C-e>', ':Neotree toggle<CR>', { silent = true })
 
 vim.api.nvim_set_keymap('n', '<leader>h', ':bdelete<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>j', ':tabnew<CR>', { noremap = true, silent = true })
