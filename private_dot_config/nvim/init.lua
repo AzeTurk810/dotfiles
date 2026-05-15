@@ -22,6 +22,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 vim.keymap.set("n", "<C-r>", function()
   vim.cmd("write")
+  -- vim.cmd("CMakeRun")
 
   local filepath = vim.fn.expand("%:p")   -- tam path (full absolute path)
   local filename_noext = vim.fn.expand("%:t:r") -- faylın adı, uzantsız
@@ -43,6 +44,14 @@ vim.keymap.set("n", "<C-r>", function()
   vim.cmd("split")
   vim.cmd("terminal " .. bash_cmd)
 end, { noremap = true })
+
+_G.CreateCapture = function(mode, source)
+  vim.cmd("vnew")
+  vim.cmd("put +")
+  vim.cmd("normal! gg")
+end
+
+
 
 
 vim.keymap.set("n", "<leader>l", function()

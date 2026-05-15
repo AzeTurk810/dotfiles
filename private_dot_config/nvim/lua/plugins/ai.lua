@@ -8,7 +8,7 @@ return {
       single_window = false, -- set this to true if you want only one OGPT window to appear at a time
       providers = {
         ollama = {
-            model = "deepseek-coder:1.3b",
+            model = "deepseek-r1:7b",
           api_host = os.getenv("OLLAMA_API_HOST") or "http://localhost:11434",
           api_key = os.getenv("OLLAMA_API_KEY") or "",
         }

@@ -80,6 +80,7 @@ alias nivm='nvim'
 alias pdf='firefox'
 alias cd='z'
 alias s='yay -Ss '
+alias yt='mov-cli -s youtube'
 alias i='yay -S '
 alias u='yay -Syu '
 alias tk='tmux kill-server'
@@ -140,7 +141,9 @@ function sl () {
     toilet -f future -F metal "Sakin ol, Campion!" | lolcat
 }
 
-
+function music () {
+    yt-dlp "ytsearch:$*" -f bestaudio -o - | mpv -
+}
 function me () {
     toilet -f future -F metal "AzeTurk810" | lolcat
 }
@@ -189,3 +192,9 @@ function focus() {
         *)      f-help ;;
     esac
 }
+
+# Created by `pipx` on 2026-01-27 20:35:30
+export PATH="$PATH:/home/azeturk810/.local/bin"
+export PATH="$PATH:/home/azeturk810/.cargo/bin"
+export PATH=$PATH:$HOME/go/bin
+export PATH=$PATH:$HOME/go/bin
