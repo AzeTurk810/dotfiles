@@ -1,0 +1,7 @@
+discord     = "discord"
+terminal    = "kitty"
+fileManager = "dolphin"
+menu        = "rofi -show drun"
+browser     = "firefox"
+zen         = "app.zen_browser.zen"
+scripts     = "~/.config/scripts/"

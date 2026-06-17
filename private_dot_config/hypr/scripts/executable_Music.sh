@@ -1,0 +1,2 @@
+#!/bin/bash
+hyprctl dispatch 'hl.dsp.workspace.toggle_special("music")'

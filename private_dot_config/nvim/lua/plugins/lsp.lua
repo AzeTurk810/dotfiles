@@ -12,7 +12,7 @@ return {
 			highlight = {
 				enable = true,
 				-- vim.lsp.inlay_hint.enable(true),
-                additional_vim_regex_highlighting = false,
+                -- additional_vim_regex_highlighting = false,
 				-- additional_vim_regex_highli "--clang-tidy",
 				-- "--",
 				-- "-DONPC"

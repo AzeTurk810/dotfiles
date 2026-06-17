@@ -1,13 +1,8 @@
 /*
 Telebe of Adicto && Mamedov yani AzeTurk810
 I see humans but no humanity
-Problem: $(PROBLEM)
-Judge: $(JUDGE)
-URL: $(URL)
-Memory Limit: $(MEMLIM)
-Time Limit: $(TIMELIM)
-My mission is changed.
 */
+#include <cstdio>
 #include <iostream>
 
 // mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
@@ -32,10 +27,8 @@ char solve();
 // Attack on titan<3
 
 signed main() {
-    ios::sync_with_stdio(0);
-    cin.tie(nullptr);
     int t = 1e9;
-    // cin >> t;
+    // scanf("%d", &t);
     for (int cases = 0; cases < t; cases++) {
         if (solve())
             break;
@@ -66,3 +59,4 @@ char solve() {
 ⠀⠀⠀⣠⣾⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⢀⣴⠾⠟⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 */
+
