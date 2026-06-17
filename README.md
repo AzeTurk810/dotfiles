@@ -15,7 +15,9 @@ My personal Linux desktop and development environment configuration.
 
 ## Screenshots
 
-> Add screenshots here
+![Desktop](https://raw.githubusercontent.com/AzeTurk810/dotfiles/master/ScreenShotsdot/2026-06-17-143535_hyprshot.png)
+
+![Neovim Dashboard](https://raw.githubusercontent.com/AzeTurk810/dotfiles/master/ScreenShotsdot/2026-06-17-143730_hyprshot.png)
 
 ## Components
 
