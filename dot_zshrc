@@ -198,3 +198,8 @@ export PATH="$PATH:/home/azeturk810/.local/bin"
 export PATH="$PATH:/home/azeturk810/.cargo/bin"
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/go/bin
+
+
+# Dynamic System Paths
+export WALLPAPER_DIR="/home/azeturk810/Pictures/Wallpapers"
+export SCRIPT_DIR="/home/azeturk810/.config/hypr/scripts"
