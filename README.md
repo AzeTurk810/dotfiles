@@ -7,11 +7,11 @@ My personal Linux desktop and development environment configuration.
 * Hyprland Wayland compositor
 * Quickshell-based desktop widgets
 * Neovim development setup
-* Waybar / custom status components
+* QuickShell bar
 * Terminal-focused workflow
 * C++ and Python development environment
 * Fast and lightweight configuration
-* Arch Linux and Debian friendly
+* Arch Linux friendly
 
 ## Screenshots
 
