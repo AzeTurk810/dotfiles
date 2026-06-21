@@ -1,3 +1,5 @@
+> ⚠️ Development may be slow, and updates are not guaranteed.
+> ⚠️ This project is still under development and may contain bugs.
 # dotfiles
 
 My personal Linux desktop and development environment configuration.
