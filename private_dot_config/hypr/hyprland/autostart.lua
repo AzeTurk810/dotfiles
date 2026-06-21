@@ -12,14 +12,15 @@
 
 -- Ekran paylaşımı və portalların Hyprland-ı tanıması üçün mütləqdir
 os.execute("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
--- os.execute("systemctl --user stop xdg-desktop-portal xdg-desktop-portal-hyprland")
--- os.execute("systemctl --user start xdg-desktop-portal xdg-desktop-portal-hyprland")
+os.execute("systemctl --user stop xdg-desktop-portal xdg-desktop-portal-hyprland")
+os.execute("systemctl --user start xdg-desktop-portal xdg-desktop-portal-hyprland")
 os.execute("wl-paste --watch cliphist store &")
--- os.execute("/usr/lib/xdg-desktop-portal-hyprland &")
--- os.execute("/usr/lib/xdg-desktop-portal &")
+os.execute("/usr/lib/xdg-desktop-portal-hyprland &")
+os.execute("/usr/lib/xdg-desktop-portal &")
 os.execute("dbus-update-activation-environment --systemd --all")
-os.execute("systemctl --user start hyprland-session.target")
-os.execute("systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP HYPRLAND_INSTANCE_SIGNATURE")
+-- os.execute("systemctl --user start hyprland-session.target") XXX: with problem
+--
+os.execute("systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP HYPRLAND_INSTANCE_SIGNATURE") -- WARN: maybe with problem
 os.execute("pkill -9 awww-daemon")
 os.execute("pkill -9 qs")
 os.execute("awww-daemon &")
