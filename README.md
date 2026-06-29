@@ -1,6 +1,3 @@
-> ⚠️ Development may be slow, and updates are not guaranteed.
-
-> ⚠️ This project is still under development and may contain bugs.
 # dotfiles
 
 My personal Linux desktop and development environment configuration.
@@ -16,7 +13,13 @@ My personal Linux desktop and development environment configuration.
 * Fast and lightweight configuration
 * Arch Linux friendly
 
-## Screenshots
+## Screenshots (Waybar)
+
+![Desktop](https://raw.githubusercontent.com/AzeTurk810/dotfiles/master/ScreenShotsdot/2026-06-17-143535_hyprshot.png)
+
+![Desktop](https://raw.githubusercontent.com/AzeTurk810/dotfiles/master/ScreenShotsdot/2026-06-17-143730_hyprshot.png)
+
+## Screenshots (QuickShell)
 
 ![Desktop](https://raw.githubusercontent.com/AzeTurk810/dotfiles/master/ScreenShotsdot/2026-06-17-143535_hyprshot.png)
 
