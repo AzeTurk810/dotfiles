@@ -21,10 +21,9 @@ Desktop
 ![Media](https://raw.githubusercontent.com/AzeTurk810/dotfiles/master/ScreenShotsdot/2026-06-29-230346_hyprshot.png)
 Media player/selector
 
-![Wallpaper](https://raw.githubusercontent.com/AzeTurk810/dotfiles/master/ScreenShotsdot/2026-06-29-230346_hyprshot.png)
-Wallpaper selector
-
 ![Desktop](https://raw.githubusercontent.com/AzeTurk810/dotfiles/master/ScreenShotsdot/2026-06-29-230600_hyprshot.png)
+
+Wallpaper selector
 
 ## Screenshots (QuickShell)
 
