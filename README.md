@@ -15,9 +15,9 @@ My personal Linux desktop and development environment configuration.
 
 ## Screenshots (Waybar)
 
-![Desktop](https://raw.githubusercontent.com/AzeTurk810/dotfiles/master/ScreenShotsdot/2026-06-17-143535_hyprshot.png)
+![Desktop](https://raw.githubusercontent.com/AzeTurk810/dotfiles/master/ScreenShotsdot/2026-06-29-230346_hyprshot.png)
 
-![Desktop](https://raw.githubusercontent.com/AzeTurk810/dotfiles/master/ScreenShotsdot/2026-06-17-143730_hyprshot.png)
+![Desktop](https://raw.githubusercontent.com/AzeTurk810/dotfiles/master/ScreenShotsdot/2026-06-29-230600_hyprshot.png)
 
 ## Screenshots (QuickShell)
 
