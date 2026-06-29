@@ -125,17 +125,10 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-function she() {
-    fortune | cowsay | lolcat   
-}
-
 function lox () {
     toilet -f mono12 -F metal "SENSEN!"
 }
 
-function depression () {
-    toilet -f mono12 -F metal "Move on!"
-}
 
 function sl () {
     toilet -f future -F metal "Sakin ol, Campion!" | lolcat
@@ -146,10 +139,6 @@ function music () {
 }
 function me () {
     toilet -f future -F metal "AzeTurk810" | lolcat
-}
-
-function fucku () {
-    toilet -f future -F metal "Remember u are not main character , but you can change it." | lolcat
 }
 
 function ln() {

@@ -22,8 +22,10 @@ os.execute("dbus-update-activation-environment --systemd --all")
 --
 os.execute("systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP HYPRLAND_INSTANCE_SIGNATURE") -- WARN: maybe with problem
 os.execute("pkill -9 awww-daemon")
-os.execute("pkill -9 qs")
+os.execute("pkill -9 waybar")
 os.execute("awww-daemon &")
-os.execute("qs -p ~/.config/quickshell &")
+os.execute("waybar &")
+-- os.execute("pkill -9 qs")
+-- os.execute("qs -p ~/.config/quickshell &")
 os.execute("gnome-keyring-daemon --start --components=secrets &")
 os.execute("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &")
