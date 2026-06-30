@@ -39,7 +39,7 @@ Wallpaper selector
 | Shell         | Bash / Zsh     |
 | Editor        | Neovim         |
 | Terminal      | Kitty          |
-| Widgets       | Quickshell     |
+| Widgets       | Quickshell/Waybar/Rofi     |
 | Launcher      | Rofi           |
 | Notifications | Mako           |
 | Browser       | Firefox / Zen  |
