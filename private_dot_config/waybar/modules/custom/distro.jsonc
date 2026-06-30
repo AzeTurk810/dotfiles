@@ -15,8 +15,8 @@
 		// "max-length":
 		// "align":
 		// "justify":
-		// "on-click":
-		"on-click-middle": "kitty -e ~/.config/hypr/scripts/TerminalMediaSelect.sh",
+		"on-click":"kitty -e ~/.config/hypr/scripts/TerminalMenus.sh",
+		"on-click-middle": "kitty -e ~/.config/hypr/scripts/menus/TerminalMediaSelect.sh",
 		// "on-click-right":
 		// "on-update":
 		// "on-scroll-up":
