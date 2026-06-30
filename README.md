@@ -94,6 +94,10 @@ Custom widgets and desktop components written using Quickshell.
 * Comfortable programming workflow
 * Easy customization
 
+## Some things from others
+
+ * Waybar is modified version of this: https://github.com/sejjy/mechabar
+
 ## Notes
 
 These are personal dotfiles. Some paths, monitor settings, and hardware-specific options may need to be adjusted for your system.
