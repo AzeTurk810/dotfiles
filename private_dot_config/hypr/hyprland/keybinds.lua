@@ -8,6 +8,8 @@
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
+hl.bind("Print", hl.dsp.exec_cmd('hyprshot -m region --clipboard  --freeze'))
+hl.bind("SUPER + H", hl.dsp.exec_cmd('hyprshot -m region --clipboard  --freeze'))
 hl.bind(mainMod .. " + return", hl.dsp.exec_cmd(terminal))
 local closeWindowBind = hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
@@ -18,6 +20,7 @@ hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("~/.config/hypr/scripts/Comminication.sh"))
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("~/.config/hypr/scripts/Music.sh"))
 hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd("kitty -e ~/.config/hypr/scripts/menus/TerminalMediaSelect.sh"))
+hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("kitty -e ~/.config/hypr/scripts/menus/MakoHistory.sh"))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ mode = 1 }))

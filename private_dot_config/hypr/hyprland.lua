@@ -32,6 +32,7 @@ require("hyprland.monitors")
 
 -- Set programs that you use
 require("hyprland.apps")
+require("hyprland.xdph")
 
 -------------------
 ---- AUTOSTART ----
