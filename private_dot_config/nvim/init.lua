@@ -151,4 +151,26 @@ require('lazy').setup({
   ui = { border = 'rounded' },
 })
 vim.opt.signcolumn = "yes"
+-- Compile and run C++ with Ctrl+Enter in Normal Mode
+vim.keymap.set("n", "<C-CR>", function()
+  -- Ensure the current file is saved before compiling
+  vim.cmd("silent! write")
+  
+  -- Get the current filename (e.g., a.cpp) and the base name (e.g., a)
+  local file = vim.fn.expand("%")
+  local output = vim.fn.expand("%:r")
+  
+  -- Check if we are actually editing a C++ file
+  if vim.bo.filetype == "cpp" then
+    -- Construct the build and run command, followed by a pause!
+    local cmd = string.format("g++ -std=c++17 -Wall -Wextra %s -o %s && ./%s; echo ''; echo 'Press Enter to exit...'; read", file, output, output)
+    
+    -- Open LazyVim's floating terminal and execute the command via the shell
+    require("lazy.util").float_term({ "sh", "-c", cmd }, {
+      interactive = true,
+    })
+  else
+    print("Not a C++ file!")
+  end
+end, { desc = "Compile and Run C++" })
 

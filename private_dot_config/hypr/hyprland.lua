@@ -98,7 +98,7 @@ hl.config({
 
         -- Change transparency of focused and unfocused windows
         active_opacity   = 1.0,
-        inactive_opacity = 1.0,
+        inactive_opacity = 0.8,
 
         shadow = {
             enabled      = true,
@@ -203,3 +203,8 @@ hl.config({
 ---- INPUT ----
 ---------------
 require("hyprland/input")
+
+hl.on("hyprland.start", function()
+    hl.exec_cmd("hyprctl reload") -- Will only run once at boot
+end)
+
