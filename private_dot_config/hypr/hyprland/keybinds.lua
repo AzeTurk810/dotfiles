@@ -18,7 +18,10 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("~/.config/hypr/scripts/Comminication.sh"))
+hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("~/.config/hypr/scripts/Super\\ Productivity.sh"))
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("~/.config/hypr/scripts/Music.sh"))
+hl.bind(mainMod .. " + G",
+    hl.dsp.exec_cmd("hyprctl dispatch 'hl.dsp.workspace.toggle_special(email)'"))
 hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd("kitty -e ~/.config/hypr/scripts/menus/TerminalMediaSelect.sh"))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("swaync-client -t  "))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
@@ -29,7 +32,7 @@ hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + ALT + L", hl.dsp.exec_cmd("swaylock"))
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd(zen))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
-hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("cliphist list | rofi -dmenu | cliphist decode | wl-copy"))
+hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("kitty --class clipse -e clipse"))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))

@@ -11,6 +11,27 @@ hl.window_rule({
     opacity = 0.0,
 })
 hl.window_rule({
+    match = { class = "clipse" },
+
+    float = true,
+    center = true,
+    size = { 900, 600 },
+})
+hl.window_rule({
     match = { class = "discord" },
     workspace = "special:communication",
+})
+hl.window_rule({
+    match = { class = "endcord" },
+    workspace = "special:communication",
+    opacity = 0.85,
+})
+hl.window_rule({
+    match = { class = "neomutt" },
+    workspace = "special:emial",
+    opacity = 0.85,
+})
+hl.window_rule({
+    match = { class = "com.super_productivity.SuperProductivity" },
+    workspace = "special:productivity",
 })
