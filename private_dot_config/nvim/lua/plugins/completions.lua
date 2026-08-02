@@ -95,6 +95,14 @@ return {
                 },
             },
             {
+                trigger = "iterativeSegmentTree",
+                file = "segTreeIterative.cpp",
+                includes = {
+                    "vector",
+                    "functional",
+                },
+            },
+            {
                 trigger = "dinic",
                 file = "dinic.cpp",
                 includes = {
