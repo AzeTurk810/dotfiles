@@ -11,10 +11,20 @@ hl.window_rule({
     opacity = 0.0,
 })
 hl.window_rule({
-    match = { class = "clipse" },
-
+    match = { class = "^(obsidian|ekphos|notes)$" },
+    workspace = "special:notes",
+})
+hl.window_rule({
+    match = { class = "^(clipse|fsel)$" },
     float = true,
     center = true,
+    size = { 900, 600 },
+})
+hl.window_rule({
+    match = { class = "unipicker" },
+    float = true,
+    center = true,
+    opacity = 0.85,
     size = { 900, 600 },
 })
 hl.window_rule({
