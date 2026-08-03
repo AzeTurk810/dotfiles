@@ -15,6 +15,12 @@
 	margin-bottom: -1px;
 }
 
+#cava {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    padding: 0 8px;
+}
+
 #waybar {
 	background-color: @outline;
 }

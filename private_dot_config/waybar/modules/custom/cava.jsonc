@@ -1,0 +1,8 @@
+{
+    "custom/cava": {
+        "exec": "/home/azeturk810/.config/waybar/scripts/cava.sh",
+        "return-type": "json",
+        "restart-interval": 1,
+        "tooltip": false
+    }
+}
