@@ -15,6 +15,28 @@
 	margin-bottom: -1px;
 }
 
+#custom-notify {
+    background: @main-bg;
+    color: @accent;
+
+    padding: 0 12px;
+    margin: 0 4px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+    transition: all 0.15s ease;
+}
+
+#custom-notify:hover {
+    background: rgba(80, 80, 80, 0.95);
+}
+
+#custom-notify:active {
+    background: #89b4fa;
+    color: #1e1e2e;
+}
+
 #cava {
     font-family: "JetBrainsMono Nerd Font";
     font-size: 13px;

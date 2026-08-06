@@ -1,0 +1,29 @@
+/* Rosé Pine */
+
+@define-color accent         #c4a7e7;
+@define-color main-br        #908caa;
+@define-color main-bg        #191724;
+@define-color main-fg        #e0def4;
+@define-color hover-bg       #26233a;
+@define-color hover-fg       alpha(@main-fg, 0.75);
+@define-color outline        shade(@main-bg, 0.5);
+
+/* Module colors */
+
+@define-color workspaces     #1f1d2e;
+@define-color temperature    #1f1d2e;
+@define-color memory         #26233a;
+@define-color cpu            #393552;
+@define-color gpu            #31748f;
+@define-color time           #393552;
+@define-color date           #26233a;
+@define-color tray           #1f1d2e;
+@define-color volume         #1f1d2e;
+@define-color backlight      #26233a;
+@define-color battery        #393552;
+
+/* State colors */
+
+@define-color warning        #f6c177;
+@define-color critical       #eb6f92;
+@define-color charging       #9ccfd8;

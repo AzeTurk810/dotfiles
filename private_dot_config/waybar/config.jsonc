@@ -20,15 +20,16 @@
 		"hyprland/window"
 	],
 	"modules-center": [
+        "custom/notify",
 		"hyprland/language",
 		"custom/left_div#2",
 		"temperature",
 		"custom/left_div#3",
 		"memory",
-		"custom/left_div#4",
-		"cpu",
+		// "custom/left_div#2",
         "custom/gpu",
-		"custom/left_inv#1",
+		"cpu",
+		"custom/left_inv#2",
 		"custom/left_div#5",
 		"custom/distro",
 		"custom/right_div#2",
@@ -41,7 +42,7 @@
 		"network",
 		"bluetooth",
 		"custom/update",
-		"custom/right_div#5"
+		"custom/right_div#5",
 	],
 	"modules-right": [
         "custom/cava",

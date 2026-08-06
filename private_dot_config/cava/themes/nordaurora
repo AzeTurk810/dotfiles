@@ -1,0 +1,32 @@
+[general]
+framerate = 60
+bars = 0
+bar_width = 3
+bar_spacing = 1
+sensitivity = 75
+autosens = 1
+
+[smoothing]
+integral = 80
+monstercat = 1
+gravity = 120
+ignore = 0
+noise_reduction = 77
+
+[eq]
+1 = 1.0
+2 = 1.0
+3 = 1.1
+4 = 1.2
+5 = 1.5
+[color]
+background = '#2e3440'
+foreground = '#88c0d0'
+
+gradient = 1
+gradient_count = 5
+gradient_color_1 = '#88c0d0'
+gradient_color_2 = '#81a1c1'
+gradient_color_3 = '#5e81ac'
+gradient_color_4 = '#a3be8c'
+gradient_color_5 = '#ebcb8b'

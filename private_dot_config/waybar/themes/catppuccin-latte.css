@@ -49,6 +49,7 @@
 @define-color temperature    @mantle;
 @define-color memory         @base;
 @define-color cpu            @surface0;
+@define-color gpu            #179299;
 @define-color time           @surface0;
 @define-color date           @base;
 @define-color tray           @mantle;

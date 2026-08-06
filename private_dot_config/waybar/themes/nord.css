@@ -1,0 +1,29 @@
+/* Nord */
+
+@define-color accent         #88c0d0;
+@define-color main-br        #4c566a;
+@define-color main-bg        #2e3440;
+@define-color main-fg        #eceff4;
+@define-color hover-bg       #3b4252;
+@define-color hover-fg       alpha(@main-fg, 0.75);
+@define-color outline        shade(@main-bg, 0.5);
+
+/* Module colors */
+
+@define-color workspaces     #2b303b;
+@define-color temperature    #2b303b;
+@define-color memory         #3b4252;
+@define-color cpu            #434c5e;
+@define-color gpu            #81a1c1;
+@define-color time           #434c5e;
+@define-color date           #3b4252;
+@define-color tray           #2b303b;
+@define-color volume         #2b303b;
+@define-color backlight      #3b4252;
+@define-color battery        #434c5e;
+
+/* State colors */
+
+@define-color warning        #ebcb8b;
+@define-color critical       #bf616a;
+@define-color charging       #a3be8c;

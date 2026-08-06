@@ -1,0 +1,29 @@
+/* Emerald */
+
+@define-color accent         #8ad38d;
+@define-color main-br        #8eb89a;
+@define-color main-bg        #111714;
+@define-color main-fg        #d9f2de;
+@define-color hover-bg       #1c251f;
+@define-color hover-fg       alpha(@main-fg, 0.75);
+@define-color outline        shade(@main-bg, 0.5);
+
+/* Module colors */
+
+@define-color workspaces     #18211c;
+@define-color temperature    #18211c;
+@define-color memory         #213026;
+@define-color cpu            #2c3d31;
+@define-color gpu            #50c878;
+@define-color time           #2c3d31;
+@define-color date           #213026;
+@define-color tray           #18211c;
+@define-color volume         #18211c;
+@define-color backlight      #213026;
+@define-color battery        #2c3d31;
+
+/* State colors */
+
+@define-color warning        #d6c36b;
+@define-color critical       #e56b6b;
+@define-color charging       #7ff58d;

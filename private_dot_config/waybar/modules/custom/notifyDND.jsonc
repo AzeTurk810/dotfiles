@@ -1,0 +1,12 @@
+{
+    "custom/notify": {
+        "exec": "~/.config/waybar/scripts/notify.sh",
+        "interval": 1,
+        "format": "{}",
+        "on-click": "swaync-client -t",
+        "on-click-right": "swaync-client -d",
+        "max-length": 7,
+        "tooltip": false
+    }
+}
+

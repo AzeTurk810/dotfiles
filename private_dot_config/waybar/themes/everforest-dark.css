@@ -1,0 +1,29 @@
+/* Everforest */
+
+@define-color accent         #a7c080;
+@define-color main-br        #859289;
+@define-color main-bg        #272e33;
+@define-color main-fg        #d3c6aa;
+@define-color hover-bg       #2e383c;
+@define-color hover-fg       alpha(@main-fg, 0.75);
+@define-color outline        shade(@main-bg, 0.5);
+
+/* Module colors */
+
+@define-color workspaces     #232a2e;
+@define-color temperature    #232a2e;
+@define-color memory         #2e383c;
+@define-color cpu            #374145;
+@define-color gpu            #83c092;
+@define-color time           #374145;
+@define-color date           #2e383c;
+@define-color tray           #232a2e;
+@define-color volume         #232a2e;
+@define-color backlight      #2e383c;
+@define-color battery        #374145;
+
+/* State colors */
+
+@define-color warning        #dbbc7f;
+@define-color critical       #e67e80;
+@define-color charging       #a7c080;

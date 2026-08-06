@@ -52,11 +52,13 @@
 
 #custom-left_div.4 {
     background-color: @memory;
-    color: @gpu;
+    /* color: @gpu; */
+    color: @cpu;
 }
 
 #custom-gpu {
-    background-color: @gpu;
+    background-color: @cpu;
+    /* background-color: @gpu; */
 }
 
 #custom-left_inv.1 {

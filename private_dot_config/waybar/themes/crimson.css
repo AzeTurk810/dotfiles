@@ -1,0 +1,29 @@
+/* Crimson */
+
+@define-color accent         #d65d5d;
+@define-color main-br        #b58a8a;
+@define-color main-bg        #1d1414;
+@define-color main-fg        #f2eaea;
+@define-color hover-bg       #2a1d1d;
+@define-color hover-fg       alpha(@main-fg, 0.75);
+@define-color outline        shade(@main-bg, 0.5);
+
+/* Module colors */
+
+@define-color workspaces     #251818;
+@define-color temperature    #251818;
+@define-color memory         #2d1d1d;
+@define-color cpu            #392424;
+@define-color gpu            #ff6b6b;
+@define-color time           #392424;
+@define-color date           #2d1d1d;
+@define-color tray           #251818;
+@define-color volume         #251818;
+@define-color backlight      #2d1d1d;
+@define-color battery        #392424;
+
+/* State colors */
+
+@define-color warning        #e5b567;
+@define-color critical       #ff5d62;
+@define-color charging       #7ccf7a;
