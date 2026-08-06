@@ -1,3 +1,4 @@
+local theme = "kanagawa"
 -- Set leader key before any mappings
 vim.g.mapleader = ' '
 
@@ -173,4 +174,4 @@ vim.keymap.set("n", "<C-CR>", function()
     print("Not a C++ file!")
   end
 end, { desc = "Compile and Run C++" })
-
+vim.cmd.colorscheme(theme)

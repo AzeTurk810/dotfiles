@@ -7,12 +7,12 @@ return {
 		{ "onsails/lspkind.nvim", name = "complationicons" },
 	},
 	config = function()
-		require("nvim-treesitter.configs").setup({
+		require("nvim-treesitter").setup({
 			auto_install = true,
 			highlight = {
 				enable = true,
 				-- vim.lsp.inlay_hint.enable(true),
-                -- additional_vim_regex_highlighting = false,
+                additional_vim_regex_highlighting = false,
 				-- additional_vim_regex_highli "--clang-tidy",
 				-- "--",
 				-- "-DONPC"
