@@ -15,6 +15,14 @@ hl.window_rule({
     workspace = "special:notes",
 })
 hl.window_rule({
+    match = { class = "powermenu" },
+    float = true,
+    center = true,
+    -- border = false,
+    size = {900, 600}
+})
+
+hl.window_rule({
     match = { class = "^(clipse|fsel)$" },
     float = true,
     center = true,

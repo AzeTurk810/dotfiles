@@ -31,6 +31,13 @@ if  [[ $THEME == "emrald" ]]; then
     THEME="emerald-synth"
 fi
 
+if  [[ $THEME == "crimson" ]]; then 
+    THEME="reddish"
+fi
+
+[[ "$THEME" == "everforest-dark" ]] && THEME="everforest"
+[[ "$THEME" == "gruvbox-material" ]] && THEME="gruvbox"
+
 if ! nvim --headless -c "lua if not pcall(vim.cmd, 'colorscheme $THEME') then os.exit(1) end" -c 'q' >/dev/null 2>&1; then
     echo "Error: Theme '$THEME' is not installed or failed to load!"
     exit 0

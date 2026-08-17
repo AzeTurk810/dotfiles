@@ -1,4 +1,4 @@
-local theme = "kanagawa"
+local theme = "rose-pine"
 -- Set leader key before any mappings
 vim.g.mapleader = ' '
 

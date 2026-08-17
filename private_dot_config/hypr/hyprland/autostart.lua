@@ -18,6 +18,7 @@ os.execute("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CUR
 os.execute("/usr/lib/xdg-desktop-portal-hyprland &")
 os.execute("/usr/lib/xdg-desktop-portal &")
 os.execute("dbus-update-activation-environment --systemd --all")
+os.execute("hypridle &")
 -- os.execute("systemctl --user start hyprland-session.target") XXX: with problem
 --
 os.execute("systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP HYPRLAND_INSTANCE_SIGNATURE") -- WARN: maybe with problem

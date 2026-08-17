@@ -8,6 +8,9 @@ WAYBAR_THEME="$HOME/.config/waybar/theme.sh"
 KITTY_THEME="$HOME/.config/kitty/theme.sh"
 NVIM_THEME="$HOME/.config/nvim/theme.sh"
 CAVA_THEME="$HOME/.config/cava/theme.sh"
+SWAY_THEME="$HOME/.config/swaync/theme.sh"
+HYPRLOCK_THEME="$HOME/.config/hyprlock/theme.sh"
+BTOP_THEME="$HOME/.config/btop/theme.sh"
 # WARNING: You must change it to your obsidian voult's location...
 OBSIDIAN_THEME="$HOME/Documents/Apps/Obsidian/AzeTurk810/.obsidian/theme.sh" 
 
@@ -206,15 +209,35 @@ if [[ -f "$CONF" ]]; then
     [[ -n "$WALL" ]] && apply_wallpaper "$WALL"
 fi
 
+echo "$NEW_THEME" >"$CURRENT_THEME_FILE"
+
+echo "Waybar: "
+echo
 "$WAYBAR_THEME" "$NEW_THEME"
+echo "Kitty: "
+echo
 "$KITTY_THEME" "$NEW_THEME"
+echo "Nvim: "
+echo
 "$NVIM_THEME" "$NEW_THEME"
+echo "Cava: "
+echo
 "$CAVA_THEME" "$NEW_THEME"
+echo "Sway: "
+echo
+"$SWAY_THEME" "$NEW_THEME"
+echo "Hyprlock: "
+echo
+"$HYPRLOCK_THEME" "$NEW_THEME"
+echo "Btop:"
+echo
+"$BTOP_THEME" "$NEW_THEME"
+echo "Obsidian: "
+echo
 "$OBSIDIAN_THEME" "$NEW_THEME"
 
-echo "$NEW_THEME" >"$CURRENT_THEME_FILE"
-notify-send "Swiched theme to $NEW_THEME"
 
+notify-send "Swiched theme to $NEW_THEME"
 echo "Switched to $NEW_THEME"
 echo "Press any key to continue..."
 read -n 1 -s -r
