@@ -1,0 +1,295 @@
+/* ===========================
+ * Everforest Dark Glass Theme
+ * =========================== */
+
+/* Color Palette (Everforest Dark Medium) */
+@define-color bg rgba(43, 51, 57, 0.82);        /* #2b3339 */
+@define-color surface rgba(50, 60, 67, 0.75);   /* #323c43 */
+@define-color overlay rgba(61, 72, 80, 0.85);   /* #3d4850 */
+
+@define-color text #d3c6aa;
+@define-color text-muted #9da9a0;
+@define-color subtext #7a8478;
+
+@define-color red #e67e80;
+@define-color orange #e69875;
+@define-color yellow #dbbc7f;
+@define-color green #a7c080;
+@define-color aqua #83c092;
+@define-color blue #7fbbb3;
+@define-color purple #d699b6;
+
+@define-color border rgba(167, 192, 128, 0.28);
+@define-color border-subtle rgba(255, 255, 255, 0.08);
+
+/* Global Settings */
+* {
+    font-family: "JetBrainsMono Nerd Font", "JetBrains Mono", sans-serif;
+    font-size: 13px;
+    transition: all 180ms ease-in-out;
+}
+
+/* ===========================
+ * Control Center Shell
+ * =========================== */
+
+.control-center {
+    background: @bg;
+    color: @text;
+    border-radius: 18px;
+    border: 1px solid @border;
+    padding: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6),
+                0 0 15px rgba(167, 192, 128, 0.12);
+}
+
+.control-center-list {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.control-center-list > widget {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* ===========================
+ * Remove Outer Gray Box
+ * =========================== */
+
+.notification-row,
+.notification-row:hover,
+.notification-row:focus,
+.notification-group,
+.notification-group:hover {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+    padding: 0 !important;
+    margin: 4px 0 !important;
+}
+
+/* ===========================
+ * Notifications
+ * =========================== */
+
+.notification {
+    background: @surface !important;
+    border-radius: 14px !important;
+    border: 1px solid @border !important;
+    padding: 12px !important;
+    margin: 2px 0 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+.notification:hover {
+    background: @overlay !important;
+    border-color: @green !important;
+    box-shadow: 0 0 12px rgba(167, 192, 128, 0.25) !important;
+}
+
+.notification-content {
+    background: transparent;
+    padding: 2px;
+}
+
+.summary {
+    color: @green;
+    font-weight: bold;
+    font-size: 13.5px;
+}
+
+.body {
+    color: @text;
+}
+
+.time {
+    color: @subtext;
+    font-size: 11px;
+}
+
+.appname {
+    color: @text-muted;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* Notification Action Buttons */
+.notification-action {
+    background: rgba(167, 192, 128, 0.12);
+    color: @green;
+    border-radius: 10px;
+    border: 1px solid @border;
+    font-weight: 600;
+    padding: 6px 12px;
+    margin-top: 6px;
+}
+
+.notification-action:hover {
+    background: @green;
+    color: #232a2e;
+    border-color: @aqua;
+    box-shadow: 0 0 10px rgba(167, 192, 128, 0.4);
+}
+
+/* Close Button */
+.close-button {
+    background: rgba(255, 255, 255, 0.05);
+    color: @text-muted;
+    border-radius: 999px;
+    padding: 2px;
+    border: 1px solid transparent;
+}
+
+.close-button:hover {
+    background: @red;
+    color: #232a2e;
+}
+
+/* Critical Alert Styling */
+.notification.critical {
+    border: 1px solid @red !important;
+    box-shadow: 0 0 15px rgba(230, 126, 128, 0.3) !important;
+}
+
+.notification.critical .summary {
+    color: @red;
+}
+
+/* ===========================
+ * Buttons & Toggles
+ * =========================== */
+
+button {
+    background: @overlay;
+    color: @text;
+    border-radius: 10px;
+    border: 1px solid @border-subtle;
+    padding: 8px 14px;
+}
+
+button:hover {
+    background: @green;
+    color: #232a2e;
+    border-color: @aqua;
+    box-shadow: 0 0 10px rgba(167, 192, 128, 0.35);
+}
+
+button:active {
+    background: @aqua;
+    color: #232a2e;
+}
+
+/* ===========================
+ * Sliders (Volume / Brightness)
+ * =========================== */
+
+scale {
+    min-height: 20px;
+}
+
+scale trough {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    min-height: 10px;
+}
+
+scale highlight {
+    background: linear-gradient(90deg, @green, @aqua);
+    border-radius: 999px;
+}
+
+scale slider {
+    background: @text;
+    border-radius: 999px;
+    min-width: 16px;
+    min-height: 16px;
+    margin: -3px 0;
+}
+
+scale slider:hover {
+    box-shadow: 0 0 8px @aqua;
+}
+
+/* ===========================
+ * MPRIS (Media Player)
+ * =========================== */
+
+.widget-mpris {
+    background: @surface;
+    border-radius: 14px;
+    border: 1px solid @border-subtle;
+    padding: 12px;
+}
+
+.widget-mpris-title {
+    font-weight: bold;
+    font-size: 14px;
+    color: @aqua;
+}
+
+.widget-mpris-subtitle {
+    font-size: 12px;
+    color: @text-muted;
+}
+
+.widget-mpris button {
+    border-radius: 999px;
+    padding: 6px 10px;
+}
+
+/* ===========================
+ * Widget Boxes
+ * =========================== */
+
+.widget-volume,
+.widget-backlight,
+.widget-buttons,
+.widget-title,
+.widget-dnd {
+    background: @surface;
+    border-radius: 14px;
+    border: 1px solid @border-subtle;
+    padding: 12px;
+    margin: 6px 0;
+}
+
+.widget-title label {
+    font-size: 15px;
+    font-weight: bold;
+    color: @green;
+}
+
+/* DND Button */
+.widget-dnd {
+    padding: 8px 12px;
+}
+
+.widget-dnd button {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid @border-subtle;
+}
+
+.widget-dnd button:checked {
+    background: @green;
+    color: #232a2e;
+    border-color: @aqua;
+    font-weight: bold;
+}
+
+/* ===========================
+ * Scrollbars
+ * =========================== */
+
+scrollbar slider {
+    background: rgba(167, 192, 128, 0.35);
+    border-radius: 999px;
+    min-width: 6px;
+}
+
+scrollbar slider:hover {
+    background: @green;
+}

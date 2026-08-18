@@ -1,56 +1,44 @@
-/*
- * Dracula for SwayNotificationCenter (swaync)
- * https://draculatheme.com
- *
- * Drop this file in as `~/.config/swaync/style.css`, then reload:
- *   swaync-client --reload-css
- *
- * Palette: https://spec.draculatheme.com
- *
- * Colours are all in the :root block below.
- */
+/* ===========================
+ * Rosé Pine Theme for SwayNC (Full & Solid)
+ * =========================== */
 
 :root {
-  /* Dracula palette */
-  --background: #282a36;
-  --bg-darker: #21222c;
-  --current-line: #44475a;
-  --foreground: #f8f8f2;
-  --comment: #6272a4;
-  --cyan: #8be9fd;
-  --green: #50fa7b;
-  --orange: #ffb86c;
-  --pink: #ff79c6;
-  --purple: #bd93f9;
-  --red: #ff5555;
-  --yellow: #f1fa8c;
+  /* Rosé Pine palette */
+  --background: #191724;
+  --bg-darker: #1f1d2e;
+  --current-line: #26233a;
+  --foreground: #e0def4;
+  --comment: #6e6a86;
+  --cyan: #9ccfd8;
+  --green: #31748f;
+  --orange: #f6c177;
+  --pink: #ebbcba;
+  --purple: #c4a7e7;
+  --red: #eb6f92;
+  --yellow: #f6c177;
 
   /* Roles */
   --accent: var(--purple);
-  --card: #2b2d3b; /* notification card, a step above the base bg */
-  --card-hover: #343748;
-  --cc-bg: rgba(26, 27, 35, 0.96); /* control center backdrop */
-  --chip: #21222c; /* buttons, toggles, entries */
-  --chip-hover: #343748;
+  --card: #1f1d2e;
+  --card-hover: #26233a;
+  --cc-bg: #191724;
+  --chip: #1f1d2e;
+  --chip-hover: #26233a;
 
-  --text: #f8f8f2;
-  --text-dim: #a3a9c9; /* body / secondary text */
-  --text-faint: #6272a4; /* timestamps, disabled */
+  --text: #e0def4;
+  --text-dim: #908caa;
+  --text-faint: #6e6a86;
 
   --radius: 12px;
   --radius-card: 11px;
-  --stripe: 4px; /* urgency stripe width */
-  --stripe-critical: 5px; /* critical stripe, a touch thicker for weight */
-  --elev: 0 2px 10px rgba(0, 0, 0, 0.35);
-  --critical-red: #ff6e6e; /* AA-readable red type for critical title + time (5.00:1) */
+  --stripe: 4px;
+  --stripe-critical: 5px;
+  --elev: 0 2px 10px rgba(0, 0, 0, 0.45);
+  --critical-red: #eb6f92;
   --hover-transition: background 0.15s ease-in-out;
 
-  /* swaync still reads a few of its own vars; keep them mapped. */
-  --noti-bg: 43, 45, 59; /* --card as r,g,b */
+  --noti-bg: 31, 29, 46;
   --noti-bg-alpha: 1;
-
-  /* Uncomment if you use a Nerd Font for the widget icons. */
-  /* font-family: "JetBrainsMono Nerd Font", sans-serif; */
 }
 
 /* ── Windows ────────────────────────────────────────────────────────── */
@@ -78,14 +66,12 @@ blankwindow,
 
 .close-button:hover {
   background: var(--red);
-  color: var(--bg-darker);
+  color: var(--background);
   transition: var(--hover-transition);
   border: none;
 }
 
 /* ── Notification card ─────────────────────────────────────────────── */
-/* swaync auto-focuses the first row when the control center opens; kill every
-   default focus/selection background so all cards look identical. */
 .notification-row,
 .notification-row:focus,
 .notification-row:hover,
@@ -99,8 +85,6 @@ blankwindow,
   outline: none;
 }
 
-/* The control center is a GtkListBox; it auto-focuses the first row. Keep those
-   rows flat so no selection box appears behind the first card. */
 .control-center row,
 .control-center row:focus,
 .control-center row:selected,
@@ -119,40 +103,33 @@ blankwindow,
   padding: 0;
   transition: var(--hover-transition);
   background: var(--card);
-  /* left stripe carries urgency; soft shadow lifts the card off the backdrop */
   box-shadow:
     inset var(--stripe) 0 0 0 var(--accent),
     var(--elev);
 }
 
-/* Priority: stripe colour (+ a faint wash for critical) */
 .notification-row .notification-background .notification.low {
   box-shadow:
     inset var(--stripe) 0 0 0 var(--comment),
     var(--elev);
 }
 
-/* Critical: clean --card surface (so body text stays crisp — no wash, no mud).
-   Urgency lives at the card EDGE: a thicker red stripe, a near-opaque red ring,
-   and a soft red glow — none of which ever sit under text — plus red title/time. */
 .notification-row .notification-background .notification.critical {
   box-shadow:
     inset var(--stripe-critical) 0 0 0 var(--red),
-    0 0 0 1px rgba(255, 85, 85, 0.85),
-    0 0 13px 1px rgba(255, 85, 85, 0.26),
+    0 0 0 1px rgba(235, 111, 146, 0.85),
+    0 0 13px 1px rgba(235, 111, 146, 0.26),
     var(--elev);
 }
 
-/* Hover intensifies the ring + glow so they still read on the lighter card-hover. */
 .notification-row .notification-background .notification.critical:hover {
   box-shadow:
     inset var(--stripe-critical) 0 0 0 var(--red),
-    0 0 0 1px rgba(255, 85, 85, 0.92),
-    0 0 15px 1px rgba(255, 85, 85, 0.32),
+    0 0 0 1px rgba(235, 111, 146, 0.92),
+    0 0 15px 1px rgba(235, 111, 146, 0.32),
     var(--elev);
 }
 
-/* Critical type signals: title + timestamp glow red; body stays high-contrast gray. */
 .notification.critical .notification-content .text-box .summary {
   color: var(--critical-red);
 }
@@ -162,7 +139,6 @@ blankwindow,
   font-weight: 700;
 }
 
-/* The big clickable area (icon + text) */
 .notification-row
   .notification-background
   .notification
@@ -177,7 +153,6 @@ blankwindow,
   border-radius: var(--radius-card);
 }
 
-/* keyboard focus (control center auto-focuses the first card) must not paint a box */
 .notification-row
   .notification-background
   .notification
@@ -224,7 +199,7 @@ blankwindow,
 .notification-content .app-icon {
   -gtk-icon-filter: none;
   -gtk-icon-size: 20px;
-  -gtk-icon-shadow: 0 1px 4px black;
+  -gtk-icon-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   margin: 6px;
 }
 
@@ -315,7 +290,7 @@ blankwindow,
   border-color: transparent;
 }
 
-/* Alt actions (buttons under a notification) */
+/* Alt actions */
 .notification-alt-actions {
   background: none;
   border-bottom-left-radius: var(--radius-card);
@@ -453,7 +428,6 @@ scrollbar slider:hover {
   padding: 0;
 }
 
-/* Title row + "clear all" */
 .widget-title {
   margin: 2px 6px 10px 6px;
 }
@@ -499,7 +473,7 @@ scrollbar slider:hover {
 }
 
 .widget-dnd > switch slider {
-  background: var(--foreground);
+  background: var(--background);
   border-radius: 100%;
   min-width: 18px;
   min-height: 18px;
@@ -573,7 +547,7 @@ scrollbar slider:hover {
 
 .widget-buttons-grid > flowbox > flowboxchild > button:checked {
   background: var(--accent);
-  color: var(--bg-darker);
+  color: var(--background);
 }
 
 /* Menubar */

@@ -1,0 +1,29 @@
+/* ===========================
+ * Wallust Auto-Generated Colors
+ * =========================== */
+
+@define-color main-bg #12211F;
+@define-color bg-darker #12211F;
+@define-color current-line #263734;
+@define-color foreground #F7FAF5;
+@define-color comment #263734;
+@define-color cyan #B9C7B1;
+@define-color green #3C5647;
+@define-color orange #5B6F5D;
+@define-color pink #899B83;
+@define-color purple #899B83;
+@define-color red #253B33;
+@define-color yellow #5B6F5D;
+
+/* Roles */
+@define-color accent #5B6F5D;
+@define-color card #12211F;
+@define-color card-hover #263734;
+@define-color cc-bg #12211F;
+@define-color chip #12211F;
+@define-color chip-hover #263734;
+
+@define-color text #F7FAF5;
+@define-color text-dim #F7FAF5;
+@define-color text-faint #263734;
+@define-color critical-red #253B33;
